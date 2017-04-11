@@ -1,8 +1,8 @@
-package edu.dtcc.emailman;
+package p2;
 
 import java.util.Comparator;
 
-public class GeometricObjectComparator implements Comparator<GeometricObject> {
+class GeometricObjectComparator implements Comparator<GeometricObject> {
 
     @Override
     public int compare(GeometricObject g1, GeometricObject g2) {

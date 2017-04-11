@@ -1,17 +1,16 @@
-package edu.dtcc.emailman;
+package p1;
 
 import java.util.Comparator;
 
 public class TestComparator {
 
-
     public static void main(String[] args) {
-        GeometricObject circle1 = new Circle(5, "BEIGE");
-        GeometricObject square1 = new Square(5, "RED");
+        GeometricObject go1 = new Circle(5, "BEIGE");
+        GeometricObject go2 = new Square(5, "RED");
 
-        System.out.println(circle1.getArea() + " " + square1.getArea());
+        System.out.println(go1.getArea() + " " + go2.getArea());
 
-        GeometricObject g = max(circle1, square1, new GeometricObjectComparator());
+        GeometricObject g = max(go1, go2, new GeometricObjectComparator());
 
         if (g instanceof Circle)
             System.out.printf("The circle is the ");
@@ -68,4 +67,3 @@ class Square extends GeometricObject {
         return side * side;
     }
 }
-
