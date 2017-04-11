@@ -15,21 +15,18 @@ public class TestComparator {
         geometricObjects.add(new Square(6, "YELLOW"));
 
         System.out.println("Original list:");
-        String name;
-        for (GeometricObject each : geometricObjects) {
-            if (each instanceof Circle)
-                name = "Circle";
-            else
-                name = "Square";
-
-            System.out.println(name + ": " + each.getArea() + " " + each.getColor());
-        }
+        printList(geometricObjects);
 
         Comparator<GeometricObject> c = new GeometricObjectComparator();
         sort(geometricObjects, c);
 
         System.out.println("\nSorted list:");
-        for (GeometricObject each : geometricObjects) {
+        printList(geometricObjects);
+    }
+
+    private static void printList(ArrayList<GeometricObject> arrayList) {
+        String name;
+        for (GeometricObject each : arrayList) {
             if (each instanceof Circle)
                 name = "Circle";
             else
