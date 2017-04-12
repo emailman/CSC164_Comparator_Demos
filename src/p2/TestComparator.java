@@ -8,7 +8,7 @@ import static java.util.Collections.sort;
 public class TestComparator {
 
     public static void main(String[] args) {
-        ArrayList<GeometricObject> geometricObjects = new ArrayList<GeometricObject>();
+        ArrayList<GeometricObject> geometricObjects = new ArrayList<>();
         geometricObjects.add(new Circle(5, "BEIGE"));
         geometricObjects.add(new Square(5, "RED"));
         geometricObjects.add(new Circle(4, "WHITE"));
