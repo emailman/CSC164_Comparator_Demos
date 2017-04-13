@@ -18,9 +18,13 @@ public class TestComparator {
         printList(geometricObjects);
 
         Comparator<GeometricObject> c = new GeometricObjectComparator();
-        sort(geometricObjects, c);
 
+        sort(geometricObjects, c);
         System.out.println("\nSorted list:");
+        printList(geometricObjects);
+
+        sort(geometricObjects, c.reversed());
+        System.out.println("\nReverse sorted list:");
         printList(geometricObjects);
     }
 
